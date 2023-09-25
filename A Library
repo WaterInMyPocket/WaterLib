@@ -89,27 +89,34 @@ function lib:Window(text, preset, closebind)
     CloseBind = closebind or Enum.KeyCode.RightControl
     PresetColor = preset or Color3.fromRGB(44, 120, 224)
     fs = false
-    local Main = Instance.new("Frame")
-    local TabHold = Instance.new("Frame")
-    local TabHoldLayout = Instance.new("UIListLayout")
-    local Title = Instance.new("TextLabel")
-    local TabFolder = Instance.new("Folder")
-    local DragFrame = Instance.new("Frame")
-    local UICorner = Instance.new("UICorner") -- Added UICorner
+local Main = Instance.new("Frame")
+local TabHold = Instance.new("Frame")
+local TabHoldLayout = Instance.new("UIListLayout")
+local Title = Instance.new("TextLabel")
+local TabFolder = Instance.new("Folder")
+local DragFrame = Instance.new("Frame")
+local UICorner1 = Instance.new("UICorner")
+local UICorner2 = Instance.new("UICorner")
 
-    Main.Name = "Main"
-    Main.Parent = ui
-    Main.AnchorPoint = Vector2.new(0.5, 0.5)
-    Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-    Main.BorderSizePixel = 0
-    Main.Position = UDim2.new(0.5, 0, 0.5, 0)
-    Main.Size = UDim2.new(0, 0, 0, 0)
-    Main.ClipsDescendants = true
-    Main.Visible = true
+-- Create UiStroke
+local UiStroke = Instance.new("UiStroke")
+UiStroke.Thickness = 2 -- Adjust the thickness as needed
+UiStroke.Parent = Main
 
-    -- Set up UICorner properties
-    UICorner.Parent = Main
-    UICorner.CornerRadius = UDim.new(0.5, 0.5) -- Adjust the radius as needed
+Main.Name = "Main"
+Main.Parent = ui
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+Main.Size = UDim2.new(0, 0, 0, 0)
+Main.ClipsDescendants = true
+Main.Visible = true
+
+-- Set up UICorner properties
+UICorner1.Parent = Main
+UICorner1.CornerRadius = UDim.new(0.5, 0.5) -- Adjust the radius as needed
+
 
 
     TabHold.Name = "TabHold"
@@ -141,6 +148,9 @@ function lib:Window(text, preset, closebind)
     DragFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     DragFrame.BackgroundTransparency = 1.000
     DragFrame.Size = UDim2.new(0, 560, 0, 41)
+
+    UICorner1.Parent = DragFrame
+    UICorner1.CornerRadius = UDim.new(0.5, 0.5) -- Adjust the radius as needed
 
     Main:TweenSize(UDim2.new(0, 560, 0, 319), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 
