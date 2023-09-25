@@ -109,7 +109,7 @@ function lib:Window(text, preset, closebind)
 
     -- Set up UICorner properties
     UICorner.Parent = Main
-    UICorner.CornerRadius = UDim.new(0, 2) -- Adjust the radius as needed
+    UICorner.CornerRadius = UDim.new(0, 0) -- Adjust the radius as needed
 
 
     TabHold.Name = "TabHold"
