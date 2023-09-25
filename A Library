@@ -1477,7 +1477,7 @@ function lib:Window(text, preset, closebind)
             Label.Font = Enum.Font.SourceSans
             Label.Text = ""
             Label.TextColor3 = Color3.fromRGB(0, 0, 0)
-            Label.TextScaled = true
+            Label.TextSize = 14.000
 
             LabelCorner.CornerRadius = UDim.new(0, 5)
             LabelCorner.Name = "ButtonCorner"
@@ -1526,6 +1526,7 @@ function lib:Window(text, preset, closebind)
             TextboxTitle.Text = text
             TextboxTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             TextboxTitle.TextSize = 14.000
+            TextboxTitle.TextScaled = true
             TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
 
             TextboxFrame.Name = "TextboxFrame"
