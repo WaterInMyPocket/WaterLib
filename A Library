@@ -8,7 +8,7 @@ local PresetColor = Color3.fromRGB(44, 120, 224)
 local CloseBind = Enum.KeyCode.T
 
 local ui = Instance.new("ScreenGui")
-ui.Name = "UI"
+ui.Name = "NewUI"
 ui.Parent = game.CoreGui
 ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
