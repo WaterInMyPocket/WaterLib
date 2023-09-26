@@ -101,10 +101,11 @@ local UICorner2 = Instance.new("UICorner")
 -- Create UiStroke
 local UiStroke = Instance.new("UIStroke")
 UiStroke.Thickness = 4.5 -- Adjust the thickness as needed
+UiStroke.Color = Color3.new(0.0784314, 0.568627, 0.780392)
 
 -- Create a UIGradient 
 local UiGradient = Instance.new("UIGradient")
-UiGradient.Color = ColorSequence.new(Color3.new(0.0784314, 0.568627, 0.780392), Color3.new(255, 255, 255)) -- Replace with your desired colors
+UiGradient.Color = ColorSequence.new(Color3.fromRGB(0.0784314, 0.568627, 0.780392), Color3.fromRGB(255, 255, 255)) -- Replace with your desired colors
 UiGradient.Parent = UiStroke
 
 UiStroke.Parent = Main
