@@ -354,7 +354,7 @@ UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
 
         TabBtn.Name = "TabBtn"
         TabBtn.Parent = TabHold
-        TabBtn.BackgroundColor3 = Color3.fromRGB(19, 118, 190)
+        TabBtn.BackgroundColor3 = Color3.fromRGB(12, 75, 120)
         TabBtn.BackgroundTransparency = 0
         TabBtn.Size = UDim2.new(0, 107, 0, 21)
         TabBtn.Font = Enum.Font.JosefinSans
