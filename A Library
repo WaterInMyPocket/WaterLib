@@ -1513,10 +1513,11 @@ UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
             LabelTitle.BackgroundTransparency = 1.000
             LabelTitle.Position = UDim2.new(0.0358126722, 0, 0, 0)
             LabelTitle.Size = UDim2.new(0, 187, 0, 42)
-            LabelTitle.Font = Enum.Font.Gotham
+            LabelTitle.Font = Enum.Font.FredokaOne
             LabelTitle.Text = text
             LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
             LabelTitle.TextSize = 14.000
+            LabelTitle.TextScaled = true
             LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
