@@ -349,6 +349,7 @@ UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
         UiStroke.Parent = TabBtn
         local UiCornerTabBtn = Instance.new("UICorner")
         UiCornerTabBtn.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
+        UiCornerTabBtn.Parent = TabBtn
         
 
         TabBtn.Name = "TabBtn"
@@ -359,7 +360,7 @@ UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
         TabBtn.Font = Enum.Font.JosefinSans
         TabBtn.Text = ""
         TabBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
-        TabBtn.TextSize = 14.000
+        TabBtn.TextSize = 21.000
 
         TabTitle.Name = "TabTitle"
         TabTitle.Parent = TabBtn
