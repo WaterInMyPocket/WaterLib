@@ -126,11 +126,11 @@ UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
 
 
     local UiCornerTabHold = Instance.new("UICorner")
-    UICorner1.CornerRadius = UDim.new(2, 2)
+    UICorner1.CornerRadius = UDim.new(1, 1)
     UiCornerTabHold.Parent = TabHold
     TabHold.Name = "TabHold"
     TabHold.Parent = Main
-    TabHold.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    TabHold.BackgroundColor3 = Color3.fromRGB(12,12,12)
     TabHold.BackgroundTransparency = 0
     TabHold.Position = UDim2.new(0.0339285731, 0, 0.147335425, 0)
     TabHold.Size = UDim2.new(0, 107, 0, 254)
@@ -354,7 +354,7 @@ UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
 
         TabBtn.Name = "TabBtn"
         TabBtn.Parent = TabHold
-        TabBtn.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+        TabBtn.BackgroundColor3 = Color3.fromRGB(10, 62, 100)
         TabBtn.BackgroundTransparency = 0
         TabBtn.Size = UDim2.new(0, 107, 0, 21)
         TabBtn.Font = Enum.Font.JosefinSans
@@ -1511,7 +1511,6 @@ UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
             Label.Text = ""
             Label.TextColor3 = Color3.fromRGB(0, 0, 0)
             Label.TextSize = 10.000
-            Label.TextScaled = true
 
             LabelCorner.CornerRadius = UDim.new(0, 5)
             LabelCorner.Name = "ButtonCorner"
