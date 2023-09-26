@@ -122,7 +122,6 @@ Main.Visible = true
 -- Set up UICorner properties
 UICorner1.Parent = Main
 UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
-UICorner1.Color = Color3.new(23, 134, 198)
 
 
 
