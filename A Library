@@ -130,7 +130,7 @@ UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
     UiCornerTabHold.Parent = TabHold
     TabHold.Name = "TabHold"
     TabHold.Parent = Main
-    TabHold.BackgroundColor3 = Color3.fromRGB(12,12,12)
+    TabHold.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
     TabHold.BackgroundTransparency = 0
     TabHold.Position = UDim2.new(0.0339285731, 0, 0.147335425, 0)
     TabHold.Size = UDim2.new(0, 107, 0, 254)
@@ -349,12 +349,14 @@ UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
         UiStroke.Parent = TabBtn
         local UiCornerTabBtn = Instance.new("UICorner")
         UiCornerTabBtn.CornerRadius = UDim.new(0.2, 0.2) -- Adjust the radius as needed
+        UiCornerTabBtn.ApplyStrokeMethod = Enum.ApplyStrokeMethod.Border
+        UiCornerTabBtn.Color = Color3.new(8, 86, 203)
         UiCornerTabBtn.Parent = TabBtn
         
 
         TabBtn.Name = "TabBtn"
         TabBtn.Parent = TabHold
-        TabBtn.BackgroundColor3 = Color3.fromRGB(12, 75, 120)
+        TabBtn.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
         TabBtn.BackgroundTransparency = 0
         TabBtn.Size = UDim2.new(0, 107, 0, 21)
         TabBtn.Font = Enum.Font.JosefinSans
