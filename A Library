@@ -345,12 +345,11 @@ UICorner1.CornerRadius = UDim.new(1.5, 1.5) -- Adjust the radius as needed
         local TabBtnIndicatorCorner = Instance.new("UICorner")
         local UiStroke = Instance.new("UIStroke")
         UiStroke.Thickness = 2 -- Adjust the thickness as needed
-        UiStroke.Color = Color3.new(0.0313725, 0.337255, 0.796078)
+        UiStroke.Color = Color3.new(8, 86, 203)
+        UiStroke.ApplyStrokeMethod = Enum.ApplyStrokeMethod.Border
         UiStroke.Parent = TabBtn
         local UiCornerTabBtn = Instance.new("UICorner")
         UiCornerTabBtn.CornerRadius = UDim.new(0.2, 0.2) -- Adjust the radius as needed
-        UiCornerTabBtn.ApplyStrokeMethod = Enum.ApplyStrokeMethod.Border
-        UiCornerTabBtn.Color = Color3.new(8, 86, 203)
         UiCornerTabBtn.Parent = TabBtn
         
 
