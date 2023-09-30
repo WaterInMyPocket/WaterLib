@@ -105,7 +105,7 @@ UiStroke.Color = Color3.new(0.0784314, 0.568627, 0.780392)
 
 -- Create a UIGradient 
 local UiGradient = Instance.new("UIGradient")
-UiGradient.Color = ColorSequence.new(Color3.fromRGB(0.0784314, 0.568627, 0.780392), Color3.fromRGB(255, 255, 255)) -- Replace with your desired colors
+UiGradient.Color = ColorSequence.new(Color3.fromRGB(0.0784314, 0.568627, 0.780392), Color3.fromRGB(8, 86, 203)) -- Replace with your desired colors
 UiGradient.Parent = UiStroke
 
 UiStroke.Parent = Main
